@@ -76,7 +76,7 @@ export function Header() {
       </div>
       {isMenuOpen && (
         <div className="md:hidden">
-          <nav className="flex flex-col space-y-4 p-4 bg-white dark:bg-gray-950 border-t">
+          <nav className="flex flex-col gap-4 p-4 bg-white dark:bg-gray-950 border-t">
             <Link
               href="/#about"
               className="text-sm font-medium hover:underline underline-offset-4"
