@@ -143,3 +143,19 @@
   animation: custom-spin 2.5s ease-in-out infinite;
   transform-origin: 70% 70%;
 }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.custom-appear {
+  /* forwards keeps it in its final position after animation */
+  animation: appear 1.5s ease-in-out forwards;
+}

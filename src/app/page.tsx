@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section with mint background */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#e6f5f0] dark:bg-gray-900">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#e6f5f0] dark:bg-gray-900 custom-appear">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="space-y-4 md:w-3/5">
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="w-full py-12 md:py-24 lg:py-20">
+      <section id="about" className="w-full py-12 md:py-24 lg:py-20 custom-appear">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
