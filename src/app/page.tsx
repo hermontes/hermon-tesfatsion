@@ -4,6 +4,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { SkillBadge } from "@/components/skill-badge";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -44,6 +45,40 @@ export default function Home() {
                 <span className="">
                   <Image alt="Hermon Tesfatsion in a professional setting" src={"/"} width={33} height={3}></Image>
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="w-full py-12 md:py-24 lg:py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
+              <p className="mx-auto max-w-[700px] lg:text-left text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                I'm a Full Stack Software Engineer with experience in building responsive web applications, custom
+                integrations, and optimizing development workflows. My background includes working with enterprise CMS
+                systems, containerization, and cloud deployments.
+              </p>
+            </div>
+            <div className="w-full max-w-3xl space-y-4">
+              <h3 className="text-xl font-bold">Core Skills</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                <SkillBadge skill="Java" icon="java" />
+                <SkillBadge skill="JavaScript" icon="javascript" />
+                <SkillBadge skill="React" icon="react" />
+                <SkillBadge skill="Next.js" icon="nextjs" />
+                <SkillBadge skill="Node.js" icon="nodejs" />
+                <SkillBadge skill="Python" icon="python" />
+                <SkillBadge skill="Docker" icon="docker" />
+                <SkillBadge skill="AWS" icon="aws" />
+                <SkillBadge skill="MongoDB" icon="mongodb" />
+                <SkillBadge skill="SQL" icon="database" />
+                <SkillBadge skill="HTML/CSS" icon="html" />
+                <SkillBadge skill="Tailwind" icon="tailwind" />
+                <SkillBadge skill="CI/CD" icon="git" />
+                <SkillBadge skill="RESTful APIs" icon="api" />
               </div>
             </div>
           </div>
