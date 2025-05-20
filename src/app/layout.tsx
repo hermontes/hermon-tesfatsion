@@ -2,11 +2,8 @@ import type { Metadata } from "next";
 import { Header } from "../components/header"
 import { ThemeProvider } from "../components/theme-provider"
 import { Toaster } from "../components/ui/sonner"
-import { Inter } from "next/font/google"
 
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Hermon Tesfatsion | Full Stack Software Engineer",
