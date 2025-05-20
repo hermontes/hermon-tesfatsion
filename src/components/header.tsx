@@ -39,9 +39,6 @@ export function Header() {
           <Link href="/#about" className="text-sm font-medium hover:underline underline-offset-4">
             About
           </Link>
-          <Link href="/#experience" className="text-sm font-medium hover:underline underline-offset-4">
-            Experience
-          </Link>
           <Link href="/#projects" className="text-sm font-medium hover:underline underline-offset-4">
             Projects
           </Link>
@@ -59,12 +56,13 @@ export function Header() {
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Toggle theme"
+              className="cursor-pointer"
             >
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
           )}
           <Button asChild variant="outline" className="hidden md:flex">
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/Hermon_Tesfatsion_Resume.pdf" target="_blank" rel="noopener noreferrer">
               Résumé
             </Link>
           </Button>
@@ -83,13 +81,6 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </Link>
-            <Link
-              href="/#experience"
-              className="text-sm font-medium hover:underline underline-offset-4"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Experience
             </Link>
             <Link
               href="/#projects"
@@ -113,7 +104,7 @@ export function Header() {
               Contact
             </Link>
             <Link
-              href="/resume.pdf"
+              href="/Hermon_Tesfatsion_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium hover:underline underline-offset-4"
