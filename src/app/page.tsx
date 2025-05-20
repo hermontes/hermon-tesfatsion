@@ -102,7 +102,7 @@ export default function Home() {
               <ProjectCard
                 title="Soccer Camp Registration System"
                 description="A comprehensive registration platform for soccer camps with user authentication, team selection, and payment processing."
-                technologies={["Next.js", "PostgresSQL", "AWS S3","React", "Prisma", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
+                technologies={["Next.js", "Typescript","PostgresSQL", "AWS S3","React", "Prisma", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
                 imageUrl="/soccer-camp.png?height=300&width=400"
                 githubUrl="https://github.com/hermontes/soccer-camp"
                 liveUrl="https://soccer-camp.vercel.app"
