@@ -48,7 +48,7 @@ export default function Home() {
               {/* hero personal image */}
               <div className="aspect-square max-w-[300px] mx-auto bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center">
                 <span className="">
-                  <Image alt="Hermon Tesfatsion in a professional setting" src={"/"} width={33} height={3}></Image>
+                  <Image alt="Hermon Tesfatsion in a professional setting" className="rounded-full" src={"/prof.jpg"} width={400} height={40}></Image>
                 </span>
               </div>
             </div>
