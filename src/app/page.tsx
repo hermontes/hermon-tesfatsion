@@ -59,7 +59,7 @@ export default function Home() {
       <section id="about" className="w-full py-12 md:py-24 lg:py-20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
+            <div className="flex flex-col lg:flex-row lg:gap-8 items-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="mx-auto max-w-[700px] text-base md:text-lg lg:text-xl lg:text-left dark:text-gray-200">
                 Full Stack Software Engineer with expertise in Java, React, and cloud technologies. I build custom integrations and responsive web applications with scalable architecture and intuitive interfaces. I enjoy delivering practical solutions that solve technically challenging and vague problems while creating real business value.
