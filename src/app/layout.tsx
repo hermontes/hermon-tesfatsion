@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className="antialiased"
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
        
           <Header />
           <main>{children}</main>
