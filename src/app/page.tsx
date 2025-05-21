@@ -22,7 +22,7 @@ export default function Home() {
                 Hello, I&apos;m Hermon! <span className="bg-transparent inline-block custom-spin">👋</span>
               </h1>
               <p className="text-xl text-gray-700 dark:text-gray-300">
-                Full Stack Software Engineer | 3+ Years Experience
+                Full Stack Software Engineer 
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-[600px]">
                 I create software with the user in mind, focusing on usability and long-term impact. Let&apos;s connect and
