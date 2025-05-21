@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -22,7 +20,7 @@ export default function Home() {
                 Hello, I&apos;m Hermon! <span className="bg-transparent inline-block custom-spin">👋</span>
               </h1>
               <p className="text-xl text-gray-700 dark:text-gray-300">
-                Full Stack Software Engineer 
+                Full Stack Software Engineer
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-[600px]">
                 I create software with the user in mind, focusing on usability and long-term impact. Let&apos;s connect and
@@ -102,7 +100,7 @@ export default function Home() {
               <ProjectCard
                 title="Soccer Camp Registration System"
                 description="A comprehensive registration platform for soccer camps with user authentication, team selection, and payment processing."
-                technologies={["Next.js", "Typescript","PostgresSQL", "AWS S3","React", "Prisma", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
+                technologies={["Next.js", "Typescript", "PostgresSQL", "AWS S3", "React", "Prisma", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
                 imageUrl="/soccer-camp.png?height=300&width=400"
                 githubUrl="https://github.com/hermontes/soccer-camp"
                 liveUrl="https://soccer-camp.vercel.app"
@@ -251,7 +249,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              © 2025 Hermon Tesfatsion. 
+              © 2025 Hermon Tesfatsion.
             </p>
           </div>
         </div>
