@@ -122,6 +122,16 @@ export default function Home() {
                 liveUrl="https://review-fest.vercel.app/"
               />
 
+          {/* To Do: Add card for Python teaching class*/}
+            {/* <ProjectCard
+                title="Blogging Platform"
+                description="Full-stack application with reusable components and RESTful APIs for complete blog management including features such as comments and likes."
+                technologies={["Node.js", "Express", "AWS S3", "MongoDB", "React"]}
+                imageUrl="/review-fest.png?height=300&width=400"
+                githubUrl="https://github.com/hermontes/BlogPost"
+                liveUrl="https://review-fest.vercel.app/"
+              /> */}
+
             </div>
 
             {/* <Link href="/projects">
