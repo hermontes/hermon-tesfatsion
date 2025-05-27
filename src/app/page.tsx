@@ -30,7 +30,7 @@ export default function Home() {
                 <Button
                   asChild
                   className="bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200"
-                >
+                > 
                   <Link href="#contact">Contact Me</Link>
                 </Button>
                 <Button
