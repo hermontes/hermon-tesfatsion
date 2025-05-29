@@ -100,7 +100,7 @@ export default function Home() {
               <ProjectCard
                 title="Soccer Camp Registration System"
                 description="A comprehensive registration platform for soccer camps with user authentication, team selection, and payment processing."
-                technologies={["Next.js", "PostgresSQL", "AWS S3", "React", "Prisma", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
+                technologies={["Next.js", "PostgresSQL", "AWS S3", "React", "Prisma ORM", "RESTFul API", "Stripe", "Authentication", "Tailwind CSS"]}
                 imageUrl="/soccer-camp.png?height=300&width=400"
                 githubUrl="https://github.com/hermontes/soccer-camp"
                 liveUrl="https://soccer-camp.vercel.app"
@@ -116,7 +116,7 @@ export default function Home() {
               <ProjectCard
                 title="Blogging Platform"
                 description="Full-stack application with reusable components and RESTful APIs for complete blog management including features such as comments and likes."
-                technologies={["Node.js", "Express", "AWS S3", "MongoDB", "React"]}
+                technologies={["Node.js", "Express", "AWS S3", "AWS Beanstalk", "MongoDB", "React", "HTML/CSS", "RESTFul API"]}
                 imageUrl="/review-fest.png?height=300&width=400"
                 githubUrl="https://github.com/hermontes/BlogPost"
                 liveUrl="https://review-fest.vercel.app/"
