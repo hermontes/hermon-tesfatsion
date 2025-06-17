@@ -1,4 +1,4 @@
-[**Live Personal Portfolio**](hermon-tesfatsion.vercel.app)
+[**Live Personal Portfolio**](hermon-tesfatsion.vercel.app) (hermon-tesfatsion.vercel.app)
 ## Getting Started
 
 First, run the development server:
