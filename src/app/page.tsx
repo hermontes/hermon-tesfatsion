@@ -1,14 +1,19 @@
+"use client"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SkillBadge } from "@/components/skill-badge";
 import {
-  Mail
+  Mail,
+  ArrowDown, ArrowUp
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { useState } from "react";
 
 import ProjectCard from "@/components/project-card";
 export default function Home() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen custom-appear">
       {/* Hero Section with mint background */}
@@ -30,7 +35,7 @@ export default function Home() {
                 <Button
                   asChild
                   className="bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200"
-                > 
+                >
                   <Link href="#contact">Contact Me</Link>
                 </Button>
                 <Button
@@ -122,8 +127,22 @@ export default function Home() {
                 liveUrl="https://review-fest.vercel.app/"
               />
 
-          {/* To Do: Add card for Python teaching class*/}
-            {/* <ProjectCard
+              {/* Additional projects that show when "View All Projects" is clicked */}
+              {showAllProjects && (
+                <>
+                  <ProjectCard
+                    title="Brightspot Documentation"
+                    description="Led the creation of this upgrade documentation for Brightspot CMS. This upgrade guide provided a step by step process for performing an upgrade of an existing project to the latest version of Brightspot and saved 960+ development hours across 15 projects while standardizing steps used by 40+ developers across teams."
+                    technologies={["Java", "Docker", "MySQL", "GitHub Actions", "Tomcat", "Gradle", "HTML/CSS", "Maven"]}
+                    imageUrl="/brightspot.png?height=300&width=400"
+                    liveUrl="https://www.brightspot.com/documentation/upgrades/"
+                  />
+
+                </>
+              )}
+
+              {/* To Do: Add card for Python teaching class*/}
+              {/* <ProjectCard
                 title="Blogging Platform"
                 description="Full-stack application with reusable components and RESTful APIs for complete blog management including features such as comments and likes."
                 technologies={["Node.js", "Express", "AWS S3", "MongoDB", "React"]}
@@ -134,11 +153,16 @@ export default function Home() {
 
             </div>
 
-            {/* <Link href="/projects">
-              <Button variant="outline" className="mt-4">
-                View All Projects <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link> */}
+            <Button
+              variant="outline"
+              className="mt-4"
+              onClick={() => setShowAllProjects(!showAllProjects)}
+            >
+              {showAllProjects ? "Show Less" : "View All Projects"}
+              {showAllProjects ?
+                <ArrowUp className={"ml-2 h-4 w-4 "} /> : <ArrowDown className={"ml-2 h-4 w-4 "} />
+              }
+            </Button>
           </div>
         </div>
       </section>

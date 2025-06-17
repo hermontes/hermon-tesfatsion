@@ -10,7 +10,7 @@ interface ProjectCardProps {
   description: string,
   technologies: string[],
   imageUrl: string,
-  githubUrl: string,
+  githubUrl?: string,
   liveUrl?: string,
 }
 
@@ -42,12 +42,14 @@ export default function ProjectCard({ title, description, technologies, imageUrl
       </CardContent>
 
       <CardFooter className="flex mt-auto  gap-5 justify-between">
+        {githubUrl && 
         <Button variant="outline" size="sm" asChild>
           <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
             <FaGithub className="mr-2 h-4 w-4" />
             Code
           </Link>
         </Button>
+        }
         {liveUrl && (
           <Button size="sm" asChild>
             <Link href={liveUrl} target="_blank" rel="noopener noreferrer">
