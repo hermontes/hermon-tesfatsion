@@ -113,29 +113,29 @@ export default function Home() {
               <ProjectCard
                 title="NOAA Marine Sanctuaries Redesign"
                 description="Revamped three National Marine Sanctuaries websites, boosting engagement by 32% through UX improvements and optimized web performance."
-                technologies={["JavaScript", "Bootstrap", "HTML/CSS", "Accessibility"]}
+                technologies={["JavaScript", "Bootstrap", "HTML", "CSS", "Accessibility"]}
                 imageUrl="/noaa.jpg?height=300&width=400"
                 githubUrl="https://github.com/hermontes/NOAA-Website-Projects"
                 liveUrl="https://sanctuaries.noaa.gov/magazine/giys/boating-happens-here.html"
               />
               <ProjectCard
-                title="Blogging Platform"
-                description="Full-stack application with reusable components and RESTful APIs for complete blog management including features such as comments and likes."
-                technologies={["Node.js", "Express", "AWS S3", "AWS Beanstalk", "MongoDB", "React", "HTML/CSS", "RESTFul API"]}
-                imageUrl="/review-fest.png?height=300&width=400"
-                githubUrl="https://github.com/hermontes/BlogPost"
-                liveUrl="https://review-fest.vercel.app/"
+                title="Brightspot Documentation"
+                description="Led the Brightspot CMS upgrades team, directly upgrading multiple projects and standardizing the process across teams. Created comprehensive upgrade documentation and guides, saving 960+ development hours across 15 projects and supporting 40+ developers."
+                technologies={["Java", "Docker", "MySQL", "GitHub Actions", "Tomcat", "Gradle", "HTML/CSS", "Maven"]}
+                imageUrl="/brightspot.png?height=300&width=400"
+                liveUrl="https://www.brightspot.com/documentation/upgrades/"
               />
 
               {/* Additional projects that show when "View All Projects" is clicked */}
               {showAllProjects && (
                 <>
                   <ProjectCard
-                    title="Brightspot Documentation"
-                    description="Led the creation of this upgrade documentation for Brightspot CMS. This upgrade guide provided a step by step process for performing an upgrade of an existing project to the latest version of Brightspot and saved 960+ development hours across 15 projects while standardizing steps used by 40+ developers across teams."
-                    technologies={["Java", "Docker", "MySQL", "GitHub Actions", "Tomcat", "Gradle", "HTML/CSS", "Maven"]}
-                    imageUrl="/brightspot.png?height=300&width=400"
-                    liveUrl="https://www.brightspot.com/documentation/upgrades/"
+                    title="Blogging Platform"
+                    description="Full-stack application with reusable components and RESTful APIs for complete blog management including features such as comments and likes."
+                    technologies={["Node.js", "Express", "AWS S3", "AWS Beanstalk", "MongoDB", "React", "HTML/CSS", "RESTFul API"]}
+                    imageUrl="/review-fest.png?height=300&width=400"
+                    githubUrl="https://github.com/hermontes/BlogPost"
+                    liveUrl="https://review-fest.vercel.app/"
                   />
 
                 </>
